@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>Spotify Artist Discovery Tool</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+		<link href="css/animate.min.css" type="text/css" rel="stylesheet">
+		<link href="css/main2.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper container">
+		     	<a href="https://www.spotify.com/us/" class="brand-logo"><img height="40" src="images/logo-navbar.svg"></a>
+		    	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		      	<ul class="right hide-on-med-and-down">
+			        <li><a href="#">Sass</a></li>
+			        <li><a href="#">Components</a></li>
+			        <li><a href="#">Javascript</a></li>
+			        <li><a href="#">Mobile</a></li>
+		      	</ul>
+		      	<ul class="side-nav" id="nav-mobile">
+			        <li><a href="#">Sass</a></li>
+			        <li><a href="#">Components</a></li>
+			        <li><a href="#">Javascript</a></li>
+			        <li><a href="#">Mobile</a></li>
+		      	</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<form class="col s12  m8 offset-m2 l6 offset-l3 card-panel search-panel">
+					<div class="row">
+						<div class="input-field col s12 m8 l9">
+							<input id="artist_name" type="text" class="validate"><label for="artist_name">Enter Artist's Name</label>
+						</div>
+						<button class="btn waves-effect waves-light col s8 offset-s2 m4 l3" name="action">Search<i class="mdi-action-search left"></i></button>
+					</div>
+				</form>
+			</div>
+			<div class="row artist hidden">
+				<div class="col s10 offset-s1 m6 offset-m3 l4 offset-l4">
+					<div class="card">
+			        	<div class="primary-artist-img card-image waves-effect waves-block waves-light activator"></div>
+		        		<div class="card-content">
+		          			<span class="primary-artist-name card-title activator grey-text text-darken-4"><i class="mdi-navigation-more-vert right"></i></span>
+		        		</div>
+		       		 	<div class="card-reveal">
+		          			<span class="primary-artist-name card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+		          			<p>Here is some more information about this product that is only revealed once clicked on.</p>
+		        		</div>
+		    		</div>
+      			</div>
+    		</div>
+			<div class="row related-artists hidden">
+				<div class="col s8 offset-s2 m5 offset-m1 l3">
+					<div class="card">
+					    <div class="related-artist-img card-image waves-effect waves-block waves-light activator">
+					    </div>
+					    <div class="card-content">
+					    	<span class="related-artist-name card-title activator grey-text text-darken-4"><i class="mdi-navigation-more-vert right"></i></span>
+					    </div>
+					    <div class="card-reveal">
+					    	<span class="related-artist-name card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+					    	<p>Insert artist biography here.</p>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="col s8 offset-s2 m5 l3">
+				    <div class="card">
+					    <div class="related-artist-img card-image waves-effect waves-block waves-light activator">
+					    </div>
+					    <div class="card-content">
+					      	<span class="related-artist-name card-title activator grey-text text-darken-4"><i class="mdi-navigation-more-vert right"></i></span>
+					    </div>
+					    <div class="card-reveal">
+					      	<span class="related-artist-name card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+					      	<p>Insert artist biography here.</p>
+					    </div>
+				    </div>
+			    </div>
+		      	<div class="col s8 offset-s2 m5 offset-m1 l3">
+		      		<div class="card">
+				        <div class="related-artist-img card-image waves-effect waves-block waves-light activator">
+				        </div>
+				        <div class="card-content">
+				          	<span class="related-artist-name card-title activator grey-text text-darken-4"><i class="mdi-navigation-more-vert right"></i></span>
+				        </div>
+				        <div class="card-reveal">
+				          	<span class="related-artist-name card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+				          	<p>Insert artist biography here.</p>
+				        </div>
+		      		</div>
+		      	</div>
+		      	<div class="col s8 offset-s2 m5 l3">
+		      		<div class="card">
+				        <div class="related-artist-img card-image waves-effect waves-block waves-light activator">
+				        </div>
+				        <div class="card-content">
+				          	<span class="related-artist-name card-title activator grey-text text-darken-4"><i class="mdi-navigation-more-vert right"></i></span>
+				        </div>
+				        <div class="card-reveal">
+				          	<span class="related-artist-name card-title grey-text text-darken-4"><i class="mdi-navigation-close right"></i></span>
+				          	<p>Insert artist biography here.</p>
+				        </div>
+		      		</div>
+		      	</div>
+    		</div>
+		</div>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.tmpl.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+		<script src="js/spotify-web-api.js"></script>
+		<script src="js/localstoragedb.min.js"></script>
+		<script src="js/spotifykeys.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

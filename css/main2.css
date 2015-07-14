@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,400);
+
+html,
+body {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #2e2f33;
+  background-color: #f1f1f1;
+}
+
+nav {
+  background-color: #fff;
+}
+
+nav ul a {
+  color: #2ebd59;
+}
+
+nav ul a:hover,
+nav ul li.active {
+  color: #1ed760;
+}
+
+nav a.button-collapse i {
+  color: #2ebd59;
+}
+
+.side-nav {
+  display: none;
+}
+
+nav .brand-logo img {
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.card-panel.search-panel {
+  margin-top: 20%;
+  padding: 20px 30px 0 20px;
+  transition: all 0.4s;
+  transition-timing-function: ease-out;
+}
+
+button.btn {
+  margin-top: 12px;
+  background-color: #2ebd59;
+}
+
+.btn:hover {
+  background-color: #1ed760;
+}
+
+.input-field input[type=text]:focus+label {
+  color: #2ebd59;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #2ebd59;
+  box-shadow: 0 1px 0 0 #2ebd59;
+}
+
+.input-field input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.card .card-image img {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+span {
+  font-weight: 400;
+  color: #2ebd59;
+}
+
+@media only screen and (max-width: 600px){
+  nav .brand-logo img {
+    margin-top: 10px;
+}
+/*a {
+  color: #84bd00;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.row {
+  border: 0px solid green;
+}
+.card.small {
+  height: 150px;
+  position: relative;
+  margin-top: 10px;
+}
+.card.small .card-image {
+  overflow: hidden;
+  height: 100px;
+  max-height: 100px;
+}
+.card.small .card-content {
+  overflow: hidden;
+  height: 50px;
+  line-height: 15px;
+  padding: 5px;
+  padding-top: 15px;
+}
+.card.small .card-content .card-title {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 6px;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date],
+textarea {
+  border: 1px solid #ebedf2;
+  border-radius: 4px;
+}
+.input-field label {
+  padding-left: 5px;
+}
+.card .card-reveal {
+  width: 100%;
+}
+.card .card-image {
+  height: 200px;
+}
+.border-bottom {
+  border-bottom: 3px solid #84bd00;
+  height: 30px;
+}
+.border-right {
+  border-right: 3px solid #84bd00;
+  height: 30px;
+}
+.border-top {
+  border-top: 3px solid #84bd00;
+  height: 30px;
+}
+.border-left {
+  border-left: 3px solid #84bd00;
+  height: 30px;
+}
+.row-no-bottom-margin {
+  margin-bottom: 0;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+.spotifynav {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  margin-bottom: 10px;
+}
+nav .brand-logo {
+  font-size: 1.8rem;
+  color: #84bd00;
+  font-weight: bolder;
+  text-decoration: none;
+}
+nav ul li:hover,
+nav ul li.active {
+  background-color: #84bd00;
+  text-decoration: none;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.spotify-green {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.footer-copyright-spotify {
+  line-height: 20px;
+  background-color: #84bd00;
+}
+.mdi-action-info {
+  color: #84bd00;
+  font-size: 44px;
+}*/
+/*# sourceMappingURL=main-css-map.map */
